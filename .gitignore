@@ -3,3 +3,4 @@
 *.pyc
 .coverage
 *.egg-info/
+benchmark_assignment_ans.py
