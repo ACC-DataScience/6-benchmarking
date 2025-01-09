@@ -1,0 +1,46 @@
+{
+  "tests": [
+    {
+      "name": "1. Expected Improvement Campaigns",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest sobo_assignment_test.py::test_task_a -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "2. Upper Confidence Bound Campaigns",
+      "setup": "pip install -r requirements.txt", 
+      "run": "pytest sobo_assignment_test.py::test_task_b -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "3. Acquisition Functions Comparison",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest sobo_assignment_test.py::test_task_c -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "4. Performance Difference Analysis",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest sobo_assignment_test.py::test_task_d -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "5. LogExpectedImprovement Campaigns",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest sobo_assignment_test.py::test_task_e -v",
+      "points": 1,
+      "timeout": 10
+    },
+    {
+      "name": "6. LogExpectedImprovement Performance",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest sobo_assignment_test.py::test_task_f -v",
+      "points": 1,
+      "timeout": 10
+    }
+  ]
+}
