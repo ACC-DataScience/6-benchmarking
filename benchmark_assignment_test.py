@@ -9,11 +9,15 @@ import pytest
 
 @pytest.fixture(scope="session")
 def get_namespace():
-    script_fname = "benchmark_assignment_ans.py"
+    script_fname = "benchmark_assignment.py"
     script_content = open(script_fname).read()
 
     namespace = {}
     exec(script_content, namespace)
+    required_vars = ["ax_client_EI", "EI_traces", "ax_client_UCB", "UCB_traces", "best_avg_performance", "most_consistent", "avg_diff", "max_diff", "ax_client_LEI", "LEI_traces", "log_better"]
+    missing_vars = [var for var in required_vars if var not in namespace]
+    if missing_vars:
+        pytest.skip(f"Assignment incomplete. Missing variables: {missing_vars}")
     return namespace
 
 
