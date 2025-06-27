@@ -43,7 +43,7 @@ An example of how to specify such models is provided in the snippet below:
 ```python
 ...
     GenerationStep(
-        model=Models.BOTORCH_MODULAR,
+        model=Generators.BOTORCH_MODULAR,
         num_trials=-1,
         max_parallelism=3,
         model_kwargs={"botorch_acqf_class": qKnowledgeGradient},
