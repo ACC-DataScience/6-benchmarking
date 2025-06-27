@@ -18,8 +18,8 @@ set_seeds()  # setting the random seed for reproducibility
 
 import numpy as np
 from ax.service.ax_client import AxClient, ObjectiveProperties
-from ax.modelbridge.factory import Models
-from ax.modelbridge.generation_strategy import GenerationStep, GenerationStrategy
+from ax.modelbridge.factory import Generators
+from ax.generation_strategy.generation_strategy import GenerationStep, GenerationStrategy
 from botorch.acquisition import ExpectedImprovement
 
 seed_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -42,8 +42,8 @@ for seed in seed_list:
 # --------------------------------------------------------------------------------------
 import numpy as np
 from ax.service.ax_client import AxClient, ObjectiveProperties
-from ax.modelbridge.factory import Models
-from ax.modelbridge.generation_strategy import GenerationStep, GenerationStrategy
+from ax.modelbridge.factory import Generators
+from ax.generation_strategy.generation_strategy import GenerationStep, GenerationStrategy
 from botorch.acquisition import UpperConfidenceBound
 
 seed_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -81,8 +81,8 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 from ax.service.ax_client import AxClient, ObjectiveProperties
-from ax.modelbridge.factory import Models
-from ax.modelbridge.generation_strategy import GenerationStep, GenerationStrategy
+from ax.modelbridge.factory import Generators
+from ax.generation_strategy.generation_strategy import GenerationStep, GenerationStrategy
 from botorch.acquisition import LogExpectedImprovement
 
 seed_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
